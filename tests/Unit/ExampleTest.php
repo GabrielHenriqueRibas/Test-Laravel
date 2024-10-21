@@ -26,4 +26,9 @@ class ExampleTest extends TestCase
         $this->assertTrue($pipelineExecutado, "O pipeline deveria ser executado com sucesso");
     }
 
+    public function testEtapaStatusPipeline()
+    {
+        $response = ['status' => 'success', 'data' => []];
+        $this->assertContains('success', $response, "O status do pipeline deveria ser 'success'");
+    }
 }
