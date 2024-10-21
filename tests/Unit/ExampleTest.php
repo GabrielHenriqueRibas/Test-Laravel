@@ -14,4 +14,10 @@ class ExampleTest extends TestCase
         $this->assertTrue(true);
     }
 
+    public function testSomaValores()
+    {
+        $resultado = 5 + 3;
+        $this->assertEquals(8, $resultado, "A soma de 5 e 3 deveria ser 8");
+    }
+
 }
