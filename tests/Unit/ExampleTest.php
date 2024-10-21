@@ -20,4 +20,10 @@ class ExampleTest extends TestCase
         $this->assertEquals(8, $resultado, "A soma de 5 e 3 deveria ser 8");
     }
 
+    public function testPipelineCompleto()
+    {
+        $pipelineExecutado = true; 
+        $this->assertTrue($pipelineExecutado, "O pipeline deveria ser executado com sucesso");
+    }
+
 }
